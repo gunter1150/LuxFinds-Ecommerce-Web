@@ -219,15 +219,15 @@
                         <table class="table">
                             <thead>
                                 <tr class="text-uppercase">
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Produk</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Kuantitas</th>
                                     <th scope="col">Subtotal</th>
-                                    <th scope="col">Remove</th>
+                                    <th scope="col">Hapus</th>
                                 </tr>
                             </thead>
                             <tbody id="cart-table-body">
-                                <tr><td colspan="5" class="text-center">Your cart is empty.</td></tr>
+                                <tr><td colspan="5" class="text-center">Keranjang Anda Kosong, tidak bisa melanjutkan Checkout.</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -235,14 +235,14 @@
 
                 <div class="col-lg-4">
                     <div class="cart-summary p-4 border rounded">
-                        <h4 class="mb-4">Cart Totals</h4>
+                        <h4 class="mb-4">Total Belanjaan Anda</h4>
                         <div class="d-flex justify-content-between mb-3">
                             <span>Subtotal</span>
                             <span id="cart-subtotal">Rp0</span>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                            <span>Shipping</span>
-                            <span>Free Shipping</span>
+                            <span>Pengiriman</span>
+                            <span>Free</span>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-4 total-price">
@@ -250,8 +250,8 @@
                             <span class="fw-bold" id="cart-total">Rp0</span>
                         </div>
                         <!-- Contoh di cart.html, di bagian summary -->
-                         <a href="checkout.html" class="btn btn-dark w-100 py-3 text-uppercase" id="proceed-to-checkout-btn">PROCEED TO CHECKOUT</a>
-                         <button class="btn btn-outline-dark w-100 py-3 mt-2 text-uppercase" id="clear-cart-btn">CLEAR CART</button>
+                         <a href="checkout.html" class="btn btn-dark w-100 py-3 text-uppercase" id="proceed-to-checkout-btn">LANJUTKAN KE CHECKOUT</a>
+                         <button class="btn btn-outline-dark w-100 py-3 mt-2 text-uppercase" id="clear-cart-btn">KOSONGKAN KERANJANG</button>
                     </div>
                 </div>
             </div>
@@ -456,7 +456,7 @@
 
                 if (cartItems.length === 0) {
                     console.log("[cart.html] DEBUG: Cart is empty, displaying 'Keranjang Anda Kosong, tidak bisa melanjutkan Checkout.'.");
-                    $cartBody.append('<tr><td colspan="5" class="text-center">Keranjang Anda Kosong, tidak bisa melanjutkan Checkout..</td></tr>');
+                    $cartBody.append('<tr><td colspan="5" class="text-center">Keranjang Anda Kosong, tidak bisa melanjutkan Checkout.</td></tr>');
                     $cartCountSpan.text('0'); 
                     // Menonaktifkan tombol jika keranjang kosong
                     $proceedToCheckoutBtn.addClass('disabled');

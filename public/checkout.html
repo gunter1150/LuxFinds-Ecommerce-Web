@@ -236,14 +236,14 @@
                     <form id="checkout-form" class="needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="fullName" required>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nama Lengkap" required>
                             <div class="invalid-feedback">
                               Nama Tidak Sesuai Kaidah
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" placeholder="Alamat Email" required>
                             <div class="invalid-feedback">
                               Alamat Email Tidak Valid
                             </div>
@@ -277,14 +277,14 @@
                             </div>
                             <div class="col-md-3">
                                 <label for="zip" class="form-label">Kode Pos</label>
-                                <input type="text" class="form-control" id="Kode Pos" required>
+                                <input type="text" class="form-control" id="Kode Pos" placeholder="Contoh : 14440" required>
                                 <div class="invalid-feedback">
                                     Zip code required.
                                 </div>
                             </div>
                         </div>
                         <hr class="my-4">
-                        <button type="submit" class="btn btn-primary btn-lg w-100" id="place-order-button">Lanjutkan checkout</button>
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="place-order-button">PROSES PEMBELIAN</button>
                     </form>
                 </div>
                 <div class="col-md-5 col-lg-4 order-md-last">
@@ -511,7 +511,6 @@
                             <li class="list-group-item d-flex justify-content-between lh-sm">
                                 <div>
                                     <h6 class="my-0">${itemName} (x${item.quantity})</h6>
-                                    <small class="text-muted">${productDetails.description || 'No description'}</small>
                                 </div>
                                 <span class="text-muted">${window.formatRupiah(itemTotal)}</span> </li>
                         `;

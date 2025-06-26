@@ -208,7 +208,7 @@
         if (typeof window.Cart !== 'undefined') {
             window.Cart.addItem(productId, quantity);
             console.log(`Product ${productId} added to cart! Current cart:`, window.Cart.getItems());
-            alert('Product added to cart!'); // Untuk feedback visual
+            alert('Produk ditambahkan ke keranjang!'); // Untuk feedback visual
         } else {
             console.error("Cart object is not defined when trying to add item.");
         }
